@@ -50,5 +50,8 @@ exports.search = bigPromise(async (req, res, next) => {
     resultArr.push(element.name);
   });
 
-  res.status(200).json(resultArr);
+  res.status(200).json({
+    status: "success",
+    data: resultArr,
+  });
 });
