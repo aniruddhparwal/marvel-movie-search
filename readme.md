@@ -49,3 +49,12 @@ To run this project locally, follow these steps:
    ```bash
       npm run dev
    ```
+
+## Migration and Seed Data
+
+To seed Data:
+
+1. Run Below Command:
+   ```bash
+      npm run seed
+   ```
