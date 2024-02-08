@@ -54,7 +54,11 @@ To run this project locally, follow these steps:
 
 To seed Data:
 
-1. Run Below Command:
+1. Install dependencies:
+   ```bash
+      npm install
+   ```
+2. Run Below Command:
    ```bash
       npm run seed
    ```

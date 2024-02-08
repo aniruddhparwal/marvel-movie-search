@@ -28,7 +28,15 @@ const userData = [
 
 const seedData = async () => {
   try {
+    /**
+     * Here we are deleting all the existing documents from the User collection
+     * But in a real-world scenario, you should be careful while deleting the data
+     * as it can lead to data loss.
+     * 
+     * You can use a condition to delete only the documents that you want to delete.
+     */
     await User.deleteMany(); 
+    console.log("Data deleted successfully!");
     await User.create(userData);
     console.log("Data seeding completed!");
   } catch (error) {
