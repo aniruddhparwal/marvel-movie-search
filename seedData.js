@@ -1,15 +1,9 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+require("dotenv").config();
 const User = require('./models/user');
-const user = require('./models/user');
-mongoose.set('strictQuery', false);
+const connectwithDb = require("./config/db");
 
-dotenv.config({ path: './.env' }); 
-
-mongoose.connect(process.env.DB_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+connectwithDb();
 
 const userData = [
   {
